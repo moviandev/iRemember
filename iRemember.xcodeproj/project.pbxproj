@@ -14,6 +14,7 @@
 		BBC3F06B2A13E23C000E3DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC3F06A2A13E23C000E3DC2 /* Assets.xcassets */; };
 		BBC3F06E2A13E23C000E3DC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC3F06D2A13E23C000E3DC2 /* Preview Assets.xcassets */; };
 		BBF5EAAC2A1C525E002DC8AD /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF5EAAB2A1C525E002DC8AD /* ImageSaver.swift */; };
+		BBF5EAAE2A1D2245002DC8AD /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF5EAAD2A1D2245002DC8AD /* FileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		BBC3F06A2A13E23C000E3DC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBC3F06D2A13E23C000E3DC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BBF5EAAB2A1C525E002DC8AD /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		BBF5EAAD2A1D2245002DC8AD /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				BB8C36832A15BB1600229643 /* ImagePicker.swift */,
 				BBF5EAAB2A1C525E002DC8AD /* ImageSaver.swift */,
 				BB8C36852A15BDEC00229643 /* Person.swift */,
+				BBF5EAAD2A1D2245002DC8AD /* FileManager.swift */,
 				BBC3F06A2A13E23C000E3DC2 /* Assets.xcassets */,
 				BBC3F06C2A13E23C000E3DC2 /* Preview Content */,
 			);
@@ -149,6 +152,7 @@
 				BB8C36842A15BB1600229643 /* ImagePicker.swift in Sources */,
 				BBC3F0692A13E23B000E3DC2 /* ContentView.swift in Sources */,
 				BBF5EAAC2A1C525E002DC8AD /* ImageSaver.swift in Sources */,
+				BBF5EAAE2A1D2245002DC8AD /* FileManager.swift in Sources */,
 				BB8C36862A15BDEC00229643 /* Person.swift in Sources */,
 				BBC3F0672A13E23B000E3DC2 /* iRememberApp.swift in Sources */,
 			);
