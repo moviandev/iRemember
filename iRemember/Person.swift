@@ -10,9 +10,9 @@ import Foundation
 struct Person: Codable, Identifiable {
     var id: UUID = UUID()
     let name: String
-    let imagePath: String
+    let image: Data
     
     func generateStaticData() -> Person {
-        Person(name: "Matheus", imagePath: "fakepath")
+        Person(name: "Matheus", image: Data())
     }
 }
