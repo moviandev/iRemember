@@ -10,8 +10,21 @@ class ImageSaver: NSObject {
     var successHandler: (() -> Void)?
     var errorHandler: ((Error) -> Void)?
     
-    func writeToPhotoAlbum(image: UIImage) {
-        UIImageWriteToSavedPhotosAlbum(image, self, #selector(saveCompleted), nil)
+    let savedPath = FileManager.documentDirectory.appendingPathComponent("Persons")
+    
+    func writeData(image: UIImage, personName: String) {
+        guard let jpegData = image.jpegData(compressionQuality: 0.8) else {
+            return;
+        }
+        
+        var person = Person(name: personName, imageData: jpegData)
+        
+        do {
+            let encodedData = try JSONEncoder().encode(person);
+            try encodedData.write(to: savedPath, options: [.atomicWrite, .completeFileProtection])
+        } catch {
+            print("Error saving data")
+        }
     }
     
     @objc func saveCompleted(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
