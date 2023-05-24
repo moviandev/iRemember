@@ -13,7 +13,7 @@ struct Person: Codable, Identifiable {
     let name: String
     let imageData: Data
     
-    func generateStaticData() -> Person {
+    static func generateStaticData() -> Person {
         let image = UIImage(systemName: "exclamationmark.triangle.fill")?.jpegData(compressionQuality: 0.8)
         return Person(name: "Matheus", imageData: image!)
     }
