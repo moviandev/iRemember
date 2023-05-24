@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB3838672A1E741E0016E1EE /* AddPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3838662A1E741E0016E1EE /* AddPersonView.swift */; };
 		BB8C36842A15BB1600229643 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8C36832A15BB1600229643 /* ImagePicker.swift */; };
 		BB8C36862A15BDEC00229643 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8C36852A15BDEC00229643 /* Person.swift */; };
 		BBC3F0672A13E23B000E3DC2 /* iRememberApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC3F0662A13E23B000E3DC2 /* iRememberApp.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB3838662A1E741E0016E1EE /* AddPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonView.swift; sourceTree = "<group>"; };
 		BB8C36832A15BB1600229643 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		BB8C36852A15BDEC00229643 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		BBC3F0632A13E23B000E3DC2 /* iRemember.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iRemember.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +63,7 @@
 			children = (
 				BBC3F0662A13E23B000E3DC2 /* iRememberApp.swift */,
 				BBC3F0682A13E23B000E3DC2 /* ContentView.swift */,
+				BB3838662A1E741E0016E1EE /* AddPersonView.swift */,
 				BB8C36832A15BB1600229643 /* ImagePicker.swift */,
 				BBF5EAAB2A1C525E002DC8AD /* ImageSaver.swift */,
 				BB8C36852A15BDEC00229643 /* Person.swift */,
@@ -155,6 +158,7 @@
 				BBF5EAAE2A1D2245002DC8AD /* FileManager.swift in Sources */,
 				BB8C36862A15BDEC00229643 /* Person.swift in Sources */,
 				BBC3F0672A13E23B000E3DC2 /* iRememberApp.swift in Sources */,
+				BB3838672A1E741E0016E1EE /* AddPersonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
