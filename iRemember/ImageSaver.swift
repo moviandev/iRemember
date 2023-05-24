@@ -10,14 +10,14 @@ class ImageSaver: NSObject {
     var successHandler: (() -> Void)?
     var errorHandler: ((Error) -> Void)?
     
-    let savedPath = FileManager.documentDirectory.appendingPathComponent("Persons")
+    let savedPath = FileManager.documentDirectory.appendingPathComponent("People")
     
     func writeData(image: UIImage, personName: String) {
         guard let jpegData = image.jpegData(compressionQuality: 0.8) else {
             return;
         }
         
-        var person = Person(name: personName, imageData: jpegData)
+        let person = Person(name: personName, imageData: jpegData)
         
         do {
             let encodedData = try JSONEncoder().encode(person);
