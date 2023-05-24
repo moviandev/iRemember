@@ -8,14 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var people: [Person] = [Person.generateStaticData()]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                List(people) { person in
+                    NavigationLink {
+                        person.image
+                    } label: {
+                        HStack {
+                            person.image
+                                .resizable()
+                                .frame(width: 45, height: 40)
+                                .clipShape(Circle())
+                            Text(person.name)
+                                .foregroundColor(.primary)
+                                .font(.headline)
+                        }
+                    }
+                }
+            }
+            .navigationTitle("iRemember")
+            .toolbar {
+                Button {
+                    // implement showing sheets here
+                } label: {
+                    Image(systemName: "plus")
+                }
+            }
         }
-        .padding()
     }
 }
 
