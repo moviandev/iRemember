@@ -14,8 +14,8 @@ struct Person: Codable, Identifiable {
     let imageData: Data
     
     static func generateStaticData() -> Person {
-        let image = UIImage(systemName: "exclamationmark.triangle.fill")?.jpegData(compressionQuality: 0.8)
-        return Person(name: "Matheus", imageData: image!)
+        let image = UIImage(systemName: "exclamationmark.triangle.fill")
+        return Person(name: "Matheus", image: image!)
     }
     
     var image: Image {
@@ -24,5 +24,10 @@ struct Person: Codable, Identifiable {
         }
         
         return Image(uiImage: uiImage)
+    }
+    
+    init(name: String, image: UIImage) {
+        self.name = name
+        self.imageData = image.jpegData(compressionQuality: 0.8)!
     }
 }

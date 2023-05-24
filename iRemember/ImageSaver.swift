@@ -13,11 +13,7 @@ class ImageSaver: NSObject {
     let savedPath = FileManager.documentDirectory.appendingPathComponent("People")
     
     func writeData(image: UIImage, personName: String) {
-        guard let jpegData = image.jpegData(compressionQuality: 0.8) else {
-            return;
-        }
-        
-        let person = Person(name: personName, imageData: jpegData)
+        let person = Person(name: personName, image: image)
         
         do {
             let encodedData = try JSONEncoder().encode(person);
