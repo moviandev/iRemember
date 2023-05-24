@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var people: [Person] = [Person.generateStaticData()]
+    @State private var showingAddSheet = false
     
     var body: some View {
         NavigationView {
@@ -32,11 +33,12 @@ struct ContentView: View {
             .navigationTitle("iRemember")
             .toolbar {
                 Button {
-                    // implement showing sheets here
+                    showingAddSheet = true
                 } label: {
                     Image(systemName: "plus")
                 }
             }
+            
         }
     }
 }
