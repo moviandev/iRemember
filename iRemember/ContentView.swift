@@ -8,39 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var people: [Person] = []
+    @StateObject private var people = People()
     @State private var showingAddSheet = false
-    
-    let savedPeople = FileManager.documentDirectory.appendingPathComponent("People")
-    
-    init() {
-        do {
-            let data = try Data(contentsOf: savedPeople)
-            print(data)
-            people = try JSONDecoder().decode([Person].self, from: data)
-        } catch {
-            print("error")
-            people = []
-        }
-    }
     
     var body: some View {
         NavigationView {
             VStack {
-                List(people) { person in
+                List(people.people) { person in
                     NavigationLink {
-                        person.image
+                        PersonView(person: person)
                     } label: {
-                        HStack {
-                            person.image
-                                .resizable()
-                                .frame(width: 45, height: 40)
-                                .clipShape(Circle())
-                            Text(person.name)
-                                .foregroundColor(.primary)
-                                .font(.headline)
+                            HStack {
+                                person.image
+                                    .resizable()
+                                    .frame(width: 45, height: 40)
+                                    .clipShape(Circle())
+                                Text(person.name)
+                                    .foregroundColor(.primary)
+                                    .font(.headline)
+                            }
                         }
-                    }
                 }
             }
             .navigationTitle("iRemember")
@@ -52,19 +39,8 @@ struct ContentView: View {
                 }
             }
             .sheet(isPresented: $showingAddSheet) {
-                AddPersonView()
+                AddPersonView(people: people)
             }
-            .onAppear {
-                do {
-                    let data = try Data(contentsOf: savedPeople)
-                    print(data)
-                    people = try JSONDecoder().decode([Person].self, from: data)
-                } catch {
-                    print("error")
-                    people = []
-                }
-            }
-            
         }
     }
 }

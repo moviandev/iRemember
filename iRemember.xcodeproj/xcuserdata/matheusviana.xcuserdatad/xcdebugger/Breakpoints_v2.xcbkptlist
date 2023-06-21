@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DF7CBE05-8764-4698-A6E7-5BAC5A5B55EA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8A66318A-92F0-444A-AD52-92BE26E74EB2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iRemember/People.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "8A66318A-92F0-444A-AD52-92BE26E74EB2 - 6889cb46a7d4b6b1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iRemember.People.init() -&gt; iRemember.People"
+                  moduleName = "iRemember"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matheusviana/Library/Mobile%20Documents/com~apple~CloudDocs/Projects/iRemember/iRemember/People.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "572">
+               </Location>
+               <Location
+                  uuid = "8A66318A-92F0-444A-AD52-92BE26E74EB2 - 6889cb46a7d4b6b1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iRemember.People.init() -&gt; iRemember.People"
+                  moduleName = "iRemember"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matheusviana/Library/Mobile%20Documents/com~apple~CloudDocs/Projects/iRemember/iRemember/People.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "672">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DFB1D8CD-D53F-4736-9257-58E1BE22BAC5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iRemember/People.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
