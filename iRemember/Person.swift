@@ -26,6 +26,14 @@ struct Person: Codable, Identifiable {
         return Image(uiImage: uiImage)
     }
     
+    var uiImage: UIImage? {
+        guard let uiImage = UIImage(data: imageData) else {
+            return UIImage(systemName: "exclamationmark.triangle.fill")
+        }
+        
+        return uiImage
+    }
+    
     init(name: String, image: UIImage) {
         self.name = name
         self.imageData = image.jpegData(compressionQuality: 0.8)!
