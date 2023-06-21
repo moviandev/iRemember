@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var people: [Person] = [Person.generateStaticData()]
+    @State private var people: [Person] = []
     @State private var showingAddSheet = false
+    
+    let savedPeople = FileManager.documentDirectory.appendingPathComponent("People")
+    
+    init() {
+        do {
+            let data = try Data(contentsOf: savedPeople)
+            print(data)
+            people = try JSONDecoder().decode([Person].self, from: data)
+        } catch {
+            print("error")
+            people = []
+        }
+    }
     
     var body: some View {
         NavigationView {
@@ -36,6 +49,19 @@ struct ContentView: View {
                     showingAddSheet = true
                 } label: {
                     Image(systemName: "plus")
+                }
+            }
+            .sheet(isPresented: $showingAddSheet) {
+                AddPersonView()
+            }
+            .onAppear {
+                do {
+                    let data = try Data(contentsOf: savedPeople)
+                    print(data)
+                    people = try JSONDecoder().decode([Person].self, from: data)
+                } catch {
+                    print("error")
+                    people = []
                 }
             }
             
